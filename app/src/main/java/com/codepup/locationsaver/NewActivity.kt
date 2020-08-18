@@ -8,6 +8,9 @@ class NewActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new)
+
+        /* Add this line to get the back button on the Actionbar*/
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
 }
