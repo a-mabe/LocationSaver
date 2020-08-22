@@ -1,6 +1,7 @@
 package com.codepup.locationsaver
 
 import android.os.Bundle
+import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -16,6 +17,11 @@ class NewActivity: AppCompatActivity() {
 
         // Call this function in onCreate to setup the RecyclerView
         setupRecyclerView()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate( R.menu.search_menu, menu)
+        return true
     }
 
     /**

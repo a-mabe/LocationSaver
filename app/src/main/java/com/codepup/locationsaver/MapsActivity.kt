@@ -45,7 +45,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
     fun onFABPress(view: View) {
-        Toast.makeText(this, "You pressed the FAB!", Toast.LENGTH_LONG).show()
+        //Toast.makeText(this, "You pressed the FAB!", Toast.LENGTH_LONG).show()
 
         /* Add these two lines to transition to the new activity*/
         val intent = Intent(this, NewActivity::class.java)
